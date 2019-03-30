@@ -1,0 +1,303 @@
+/* 
+author: Vikram;
+filename: times.css;
+Date: Oct 18, 2018;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans'); /* Imported Sans Serif family Google Font */
+@import url('https://fonts.googleapis.com/css?family=Gabriela'); /* Imported Sans Serif family Google Font */
+@import url('https://fonts.googleapis.com/css?family=Antic'); /* Imported Serif family Google Font */
+
+*,
+*::after,
+*::before{
+    padding: 10;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1.063em;
+    line-height: 1.6;
+}
+
+body{
+    width: 100%;
+}
+
+h1, h2, h3, h4{
+    font-family: Merriweather Sans;
+}
+p{
+  font-family: Antic;  
+}
+.container{
+    max-width: 100%;
+}
+.subnav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  line-height: 0.5;
+  background-color: hsl(34, 51%, 49%);
+}
+.subnav a{
+  background-color: hsl(120, 100%, 25%);
+  color:hsl(60, 100%, 50%);
+  width: 100px;
+  margin: 5px;
+  text-align: right;
+  line-height: 24px;
+  font-size: 1.25em;
+}
+.mainnav{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: hsl(34, 51%, 49%);
+  height: 75px;
+  align-content: stretch;
+  justify-content: center;
+}
+.mainnav a{
+  background-color: hsl(120, 100%, 25%);
+  color:hsl(60, 100%, 50%);
+  width: 350px;
+  margin: 8px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;  
+  align-content: stretch; 
+}
+
+.masthead{
+    text-align: center;
+    line-height: 20px;
+    background-color:hsl(295, 33%, 43%);
+}
+
+.masthead h1{
+   text-align: center;
+   background-color:hsl(295, 33%, 43%);
+   color:hsl(180, 100%, 97%);
+   font-size: 28px;
+   line-height: 30px;
+   padding-bottom: 1;
+}
+
+.times-logo
+{
+    height: 80px;
+    align-content: stretch;
+    margin:10px;
+    line-height: 50px;
+    background-color: hsl(295, 33%, 43%);
+}
+
+.content{
+  background-color: hsla(34, 51%, 49%, 0.63);
+}
+
+.story.lead-story{
+    align-content: left;
+    margin-left: 0px;
+    overflow:auto;
+    display:block;
+}
+h1.story-title{
+ background-color:hsl(120, 100%, 25%);
+ color:hsl(60, 100%, 50%);
+ align-content:center;   
+}
+.story-img{
+  float: left;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 10px;
+
+}
+.story p{
+    font-size: 1.25em;
+}
+.story blockquote{
+    quotes: "\201C" "\201D";
+    text-align: center;
+    font-family: Gabriela;
+    font-size: 1.25em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.story blockquote::before{
+    content: open-quote;
+    text-align: center; 
+}
+.story blockquote::after{
+    content: close-quote;
+    text-align: center; 
+}
+
+p.byline span.author{
+    align:right;
+    background-color:hsl(0, 0%, 0%);
+    color:hsl(0, 0%, 100%);
+}
+p.byline span.pub{
+    align:center;
+    background-color:hsl(0, 0%, 0%);
+    color:hsl(0, 0%, 100%);    
+}
+.foot{
+  background-color:hsl(120, 100%, 25%);  
+}
+.foot p{
+    font-size: 0.938em;
+    font-family: serif;
+    color:hsl(60, 100%, 50%);
+}
+
+/* Desktop - 1281px to higher resolution */
+
+@media (min-width: 1281px) {
+  
+.subnav{
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 0.5;
+  background-color: hsl(34, 51%, 49%);
+  align-content: left;
+}
+
+.mainnav{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: hsl(34, 51%, 49%);
+  height: auto;
+  align-content: stretch;
+  justify-content: center;
+}
+
+}
+
+/* Laptops & Desktops - 1025px to 1280px */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+.subnav{
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 0.5;
+  background-color: hsl(34, 51%, 49%);
+  align-content: left;
+}
+
+.mainnav{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: hsl(34, 51%, 49%);
+  height: auto;
+  align-content: stretch;
+  justify-content: center;
+}
+  
+}
+
+/* Tablets, Ipods (Portrait) - 768px to 1024px */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+.subnav{
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 0.5;
+  background-color: hsla(60, 39%, 46%, 0.87);
+  align-content: left;
+}
+
+.mainnav{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: hsla(34, 51%, 49%, 0.87);
+  height: auto;
+  align-content: stretch;
+  justify-content: center;
+}
+
+}
+
+/* Tablets, Ipads - 768 to 1024px */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+.subnav{
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 0.5;
+  background-color: hsla(138, 45%, 38%, 0.79);
+  align-content: left;
+}
+
+.mainnav{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: hsla(138, 45%, 38%, 0.79);
+  height:auto;
+  align-content: stretch;
+  justify-content: center;
+}
+
+}
+
+/* Low Resolution Tablets, Mobiles - 481px to 767px */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+.subnav{
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 0.5;
+  background-color: hsl(182, 51%, 44%);
+  align-content: left;
+}
+
+.mainnav{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: hsl(182, 51%, 44%);
+  height:auto;
+  align-content: stretch;
+  justify-content: center;
+}
+    
+}
+
+/* Mobiles 320 to 480px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+.subnav{
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 0.5;
+  background-color: hsla(228, 69%, 67%, 0.82);
+  align-content: left;
+}
+    
+.mainnav{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: hsla(228, 69%, 67%, 0.82);
+  height: auto;
+  align-content: stretch;
+  justify-content: center;
+}
+
+.times-logo
+{
+    height: 80px;
+    width:320px;
+    align-content: stretch;
+    margin:10px;
+    line-height: 50px;
+    background-color: hsl(295, 33%, 43%);
+}
+
+}
